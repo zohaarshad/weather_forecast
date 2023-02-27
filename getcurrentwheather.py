@@ -2,13 +2,13 @@
 import requests, json
 
 # Enter your API key here
-api_key = "enter API KEY"
+api_key = "enter your API KeyS"
 
 # base_url variable to store url
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 # Give city name
-name = input("Enter city name : ")
+city_loname = input("Enter city name : ")
 
 # complete_url variable to store
 # complete url address
