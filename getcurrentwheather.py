@@ -2,13 +2,13 @@
 import requests, json
 
 # Enter your API key here
-api_key = "enter your API KeyS"
+api_key = "enter  your API KEY"
 
 # base_url variable to store url
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 # Give city name
-city_loname = input("Enter city name : ")
+city_name = input("Enter city name : ")
 
 # complete_url variable to store
 # complete url address
@@ -38,7 +38,8 @@ if x["cod"] != "404":
 	current_temperature = y["temp"]
 	temp_kelivn=current_temperature
 	temp_celsius=temp_kelivn-273.15
-	temp_fahrenheit= temp_kelivn*1.8-459.67
+	temp_fahrenheit=temp_kelivn*1.8-459.67
+
 
 	# store the value corresponding
 	# to the "pressure" key of y
@@ -58,16 +59,15 @@ if x["cod"] != "404":
 	weather_description = z[0]["description"]
 
 	# print following values
-	print("Temperature in fahrenheit ="+
-		  str(temp_fahrenheit) +
-		  " \nTemperature in celsius="+
-		   str(temp_celsius) +
+	print("Temperature in fahrenheit = " +
+		  str(round(temp_fahrenheit,2))+
+		"\nTemperature in celsius= " +
+		   str(round(temp_celsius,2)) +
 		"\n atmospheric pressure (in hPa unit) = " +
 					str(current_pressure) +
 		"\n humidity (in percentage) = " +
 					str(current_humidity) +
 		"\n description = " +
 					str(weather_description))
-
 else:
-	print(" City Not Found ")
+	   print(" City Not Found ")
