@@ -7,5 +7,5 @@ to  run this project we use python language and plate that run python coding lik
 # How to use project
 In this project simple ask user to enter the city name to get current weather of that city.but user can enter the city name and then user get current of any city user wants.#
 # Image of output
-[code output.png](/Users/zoha/Documents/python_development/weather_forecast.png)
+[codeoutput.png](/Users/zoha/Documents/python_development/weather_forecast.png)
 
